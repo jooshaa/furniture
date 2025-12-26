@@ -12,6 +12,7 @@ export const SlidebarBox = styled.div`
     padding: 10px;
     display: flex;
     pointer-events: none;
+    margin-bottom: 50px;
     /* justify-content: space-between; */
     
     .img-wrapper{
@@ -21,7 +22,7 @@ export const SlidebarBox = styled.div`
         margin: 0;
         position: relative;
         top: -55px; 
-        left: 300px;
+        left: 120px;
         pointer-events: auto;
 
     }
@@ -29,6 +30,9 @@ export const SlidebarBox = styled.div`
     .text-wrapper{
         width: 615px;
         height: 352px;
+        position: relative;
+        top: 30px;
+        left: 150px;
     }
 
     .text-span{
@@ -42,10 +46,37 @@ export const SlidebarBox = styled.div`
         padding: 5px 17px;
         border-radius: 100px;
         background-color: ${textColors.primary};
-        color: ${textColors.white};
-        
-        
+        color: ${textColors.white};   
     }
+
+    //=============REsponsive
+    @media (max-width: 900px) {
+    width: 830px;
+    margin: 0 10px;
+    height: auto;
+    padding: 34px;
+    /* gap: 24px; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .img-wrapper {
+      width: 320px;
+      height: 320px;
+
+      top: 0;
+      left: 0;
+    }
+
+    .text-wrapper {
+      width: auto;
+      height: auto;
+
+      top: 0;
+      left: 0;
+    }
+  }
 `
 
 
@@ -55,3 +86,5 @@ export const LampImg = styled.img`
     object-fit: fill;
     top: 0;
 `
+
+

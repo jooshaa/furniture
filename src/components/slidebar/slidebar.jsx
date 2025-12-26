@@ -8,8 +8,8 @@ import lamp from "./assets/lamp.png";
 
 export default function Slidebar() {
     return (
-        <div style={{ maxWidth: "1314px", margin: "20px auto" }}>
-            <Swiper
+        <div style={{ maxWidth: "1420px", margin: "20px auto" }}>
+            <Swiper 
                 modules={[Pagination]}
                 pagination={{ clickable: true }}
                 slidesPerView={1}
